@@ -1,106 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0faf24d9-eede-429d-a81e-64afa67332fe" name="Default Changelist" comment="" />
+    <list default="true" id="0faf24d9-eede-429d-a81e-64afa67332fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alpha_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/alpha_build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/bord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speler.py" beforeDir="false" afterPath="$PROJECT_DIR$/speler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spelerRandom.py" beforeDir="false" afterPath="$PROJECT_DIR$/spelerRandom.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1929132158">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="4262" />
-          <entry key="txt" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PLAIN_TEXT" value="16" />
-          <entry key="Python" value="4262" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pws_ttt/practice.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/alpha_build.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="94" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
               <folding>
-                <marker date="1543493030781" expanded="true" signature="227:3855" ph="..." />
+                <element signature="e#0#6#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pws_ttt/alpha_build2.py">
+        <entry file="file://$PROJECT_DIR$/speler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../pws_ttt/alpha_build.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="255">
+              <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pws_ttt/spelerRandom.py">
+        <entry file="file://$PROJECT_DIR$/bord.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pws_ttt/bord.py">
+        <entry file="file://$PROJECT_DIR$/spelerRandom.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
-              <folding>
-                <marker date="1543497836495" expanded="true" signature="12:13" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pws_ttt/speler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <marker date="1543497837078" expanded="true" signature="13:15" ph="..." />
-              </folding>
+            <state relative-caret-position="136">
+              <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -116,17 +66,13 @@
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../pws_ttt" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="8e6d19c0-f9c3-4c03-b2df-89feabee752e" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/alpha built.py" />
         <option value="$PROJECT_DIR$/alpha_built.py" />
-        <option value="$PROJECT_DIR$/alpha_build.py" />
         <option value="$PROJECT_DIR$/alpha_build2.py" />
         <option value="$PROJECT_DIR$/practice.py" />
         <option value="$PROJECT_DIR$/../pws_ttt/bord.py" />
@@ -134,6 +80,10 @@
         <option value="$PROJECT_DIR$/../pws_ttt/spelerRandom.py" />
         <option value="$PROJECT_DIR$/../pws_ttt/alpha_build2.py" />
         <option value="$PROJECT_DIR$/../pws_ttt/alpha_build.py" />
+        <option value="$PROJECT_DIR$/spelerRandom.py" />
+        <option value="$PROJECT_DIR$/speler.py" />
+        <option value="$PROJECT_DIR$/bord.py" />
+        <option value="$PROJECT_DIR$/alpha_build.py" />
       </list>
     </option>
   </component>
@@ -152,8 +102,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="untitled" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pws_ttt" type="462c0819:PsiDirectoryNode" />
+              <item name="pws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pws" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.alpha_build (1)">
+  <component name="RunManager" selected="Python.alpha_build">
     <configuration name="alpha_build (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -215,28 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="alpha_build2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../pws_ttt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pws_ttt/alpha_build2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="alpha_build2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="alpha_build" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -248,7 +177,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alpha_build2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alpha_build.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bord" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bord.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -278,7 +228,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="practice" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="speler" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,7 +240,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/speler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -300,19 +250,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.practice" />
-      <item itemvalue="Python.alpha_build2" />
-      <item itemvalue="Python.alpha_build2 (1)" />
       <item itemvalue="Python.practice (1)" />
       <item itemvalue="Python.alpha_build (1)" />
+      <item itemvalue="Python.alpha_build" />
+      <item itemvalue="Python.speler" />
+      <item itemvalue="Python.bord" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.alpha_build" />
+        <item itemvalue="Python.bord" />
+        <item itemvalue="Python.speler" />
         <item itemvalue="Python.alpha_build (1)" />
         <item itemvalue="Python.practice (1)" />
-        <item itemvalue="Python.alpha_build2 (1)" />
-        <item itemvalue="Python.alpha_build2" />
-        <item itemvalue="Python.practice" />
       </list>
     </recent_temporary>
   </component>
@@ -349,21 +299,21 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24330357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12127976" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Thumbnails" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925596" visible="true" weight="0.2487725" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49925596" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" visible="true" weight="0.3" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.29787233" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Thumbnails" order="11" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -388,9 +338,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
@@ -398,57 +345,37 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/alpha built.py" />
     <entry file="file://$PROJECT_DIR$/alpha_built.py" />
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1968868981/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="809" column="64" selection-start-line="809" selection-start-column="64" selection-end-line="809" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pws_ttt/bord.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-          <folding>
-            <marker date="1543497836495" expanded="true" signature="12:13" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pws_ttt/speler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <marker date="1543497837078" expanded="true" signature="13:15" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pws_ttt/spelerRandom.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-1968868981/builtins.py" />
+    <entry file="file://$PROJECT_DIR$/../pws_ttt/bord.py" />
+    <entry file="file://$PROJECT_DIR$/../pws_ttt/speler.py" />
+    <entry file="file://$PROJECT_DIR$/../pws_ttt/spelerRandom.py" />
+    <entry file="file://$PROJECT_DIR$/../pws_ttt/practice.py" />
+    <entry file="file://$PROJECT_DIR$/../pws_ttt/alpha_build2.py" />
+    <entry file="file://$PROJECT_DIR$/../pws_ttt/alpha_build.py" />
+    <entry file="file://$PROJECT_DIR$/bord.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pws_ttt/practice.py">
+    <entry file="file://$PROJECT_DIR$/speler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="94" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="15" column="70" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spelerRandom.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" lean-forward="true" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alpha_build.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
           <folding>
-            <marker date="1543493030781" expanded="true" signature="227:3855" ph="..." />
+            <element signature="e#0#6#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pws_ttt/alpha_build2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pws_ttt/alpha_build.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
