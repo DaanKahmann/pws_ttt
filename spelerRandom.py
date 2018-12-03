@@ -15,7 +15,6 @@ class spelerrandom:
             else:
                 invoer_posR = str(random.randrange(1, 10))
 
-class spelerrandom2:
     def spelerRobot2(self, bord):
         tuple_getallen = ("1", "2", "3", "4", "5", "6", "7", "8", "9")
         valid_input = False
