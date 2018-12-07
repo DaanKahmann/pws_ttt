@@ -6,27 +6,27 @@ class regels:
         bord = list(range(1, 10))  # Maak het bord
         x = regels.wie_begint(self)
         validInput = False
-        spelTegen = input("Tegen wie wil je spelen? Random of speler")
+        spelTegen = input("Tegen wie wil je spelen? kies uit: O random, X random, allebei random of allebei speler ")
         while not validInput:
-            if spelTegen in ("random", "Random", "speler", "Speler"):
+            if spelTegen in ("allebei speler", "allebei random", "O random", "X random"):
                 validInput = True
             else:
-                spelTegen = input("Tegen wie wil je spelen? Random of speler")
+                spelTegen = input("Tegen wie wil je spelen? kies uit: O random, X random, allebei random of allebei speler ")
 
         print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord zien
 
         for i in range(9):
             if x % 2 == 0:  # even getallen: 'X'
-                if spelTegen in ("speler", "Speler"):
-                    speler.playermens.spelerX(self, bord)
-                else:
+                if spelTegen in ("X random", "allebei random"):
                     spelerRandom.spelerrandom.spelerRobot2(self, bord)
+                else:
+                    speler.playermens.spelerX(self, bord)
                 beurtX = True
             else:  # oneven getallen 'O'
-                if spelTegen in ("speler", "Speler"):
-                    speler.playermens.spelerO(self, bord)
-                else:
+                if spelTegen in ("O random", "allebei random"):
                     spelerRandom.spelerrandom.spelerRobot(self, bord)
+                else:
+                    speler.playermens.spelerO(self, bord)
                 beurtX = False
             print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
             if regels.winnaar(self, beurtX, bord):
