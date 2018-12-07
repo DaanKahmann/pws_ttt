@@ -13,6 +13,7 @@ class regels:
             else:
                 spelTegen = input("Tegen wie wil je spelen? kies uit: 1) O random 2) X random 3) allebei random 4) allebei speler ")
 
+
         print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord zien
 
         for i in range(9):
@@ -22,14 +23,20 @@ class regels:
                 else:
                     speler.playermens.spelerX(self, bord)
                 beurtX = True
+
             else:  # oneven getallen 'O'
                 if spelTegen in ("1", "3"):
                     spelerRandom.spelerrandom.spelerRobot(self, bord)
                 else:
                     speler.playermens.spelerO(self, bord)
                 beurtX = False
+
             print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
+
             if regels.winnaar(self, beurtX, bord):
+                regels.spel(self)
+            elif x == 9 :
+                print("It's a Tie")
                 break
             x = x + 1
 
