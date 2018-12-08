@@ -9,9 +9,9 @@ class tic_tac_toe:
         spelTegen = bord.regels.tegen_wie(self)
 
         x = bord.regels.wie_begint(self)
-        bord.regels.spel(self, spelTegen, x)
 
-
+        for i in range(20):
+            bord.regels.spel(self, spelTegen, x)
 
 
 

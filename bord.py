@@ -30,9 +30,8 @@ class regels:
             print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
 
             if regels.winnaar(self, beurtX, bord):
-
                 break
-            elif x ==9:
+            elif i == 8:
                 print("It's a Tie")
                 break
             x = x + 1
@@ -67,7 +66,7 @@ class regels:
                 or bord[1] == bord[4] == bord[7] or bord[2] == bord[5] == bord[8]:
             if beurtX:
                 print("X heeft gewonnen")
-            else:
+            elif not beurtX:
                 print("O heeft gewonnen")
             return True
 
