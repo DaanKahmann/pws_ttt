@@ -5,6 +5,17 @@ import spelerRandom
 class regels:
 
     def spel(self, spelTegen, x):
+        scoreX = [0, 0, 0]  # gewonnen, verloren, gelijk
+        scoreO = [0, 0, 0]
+
+        winx = 0
+        verliesx = 0
+
+        wino = 0
+        verlieso = 0
+
+        gelijk = 0
+
         bord = list(range(1, 10))  # Maak het bord
         #x = regels.wie_begint(self)
 
@@ -30,10 +41,28 @@ class regels:
             print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
 
             if regels.winnaar(self, beurtX, bord):
+                if beurtX:
+                    winx = winx + 1
+                    scoreX[0] = winx
+                    verlieso = verlieso + 1
+                    scoreO[1] = verlieso
 
-                regels.spel(self, spelTegen, x)
-            elif i ==9:
+                else:
+                    wino = wino + 1
+                    scoreO[0] = wino
+                    verliesx = verliesx + 1
+                    scoreX[1] = verliesx
+                print('stand van X:', scoreX)
+                print('stand van O:', scoreO)
+
+                break
+            elif i == 8:
                 print("It's a Tie")
+                gelijk = gelijk + 1
+                scoreX[2] = gelijk
+                scoreO[2] = gelijk
+                print('stand van X:', scoreX)
+                print('stand van O:', scoreO)
                 break
             x = x + 1
 
@@ -62,14 +91,50 @@ class regels:
         return x
 
     def winnaar(self, beurtX, bord):
+
         if bord[0] == bord[1] == bord[2] or bord[3] == bord[4] == bord[5] or bord[6] == bord[7] == bord[8] \
                 or bord[2] == bord[4] == bord[6] or bord[0] == bord[4] == bord[8] or bord[0] == bord[3] == bord[6] \
                 or bord[1] == bord[4] == bord[7] or bord[2] == bord[5] == bord[8]:
             if beurtX:
                 print("X heeft gewonnen")
+
             else:
                 print("O heeft gewonnen")
             return True
+
+
+class stand:
+
+    def score(self):
+        scoreX = [0, 0, 0]  # gewonnen, verloren, gelijk
+        scoreO = [0, 0, 0]
+
+        winx = 0
+        verliesx = 0
+
+        wino = 0
+        verlieso = 0
+
+        gelijk = 0
+
+    def scorewinX(self, winx, scoreX, verlieso, scoreO):
+        winx = winx + 1
+        scoreX[0] = winx
+        verlieso = verlieso + 1
+        scoreO[1] = verlieso
+
+    def scorewinO(self, wino, scoreO, verliesx, scoreX):
+        wino = wino + 1
+        scoreO[0] = wino
+        verliesx = verliesx + 1
+        scoreX[1] = verliesx
+
+    def gelijkscore(self,gelijk, scoreX, scoreO):
+        gelijk = gelijk + 1
+        scoreX[2] = gelijk
+        scoreO[2] = gelijk
+
+
 
 
 
