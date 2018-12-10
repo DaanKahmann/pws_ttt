@@ -1,6 +1,6 @@
 import speler
 import spelerRandom
-
+import random
 
 class regels:
 
@@ -19,7 +19,8 @@ class regels:
         for i in range(9):
             if x % 2 == 0:  # even getallen: 'X'
                 if spelTegen in ("2", "3"):
-                    spelerRandom.spelerrandom.spelerRobot2(self, bord)
+                    invoer_pos = str(random.randrange(1, 10))
+                    spelerRandom.playerRandom(bord, invoer_pos, x)
                 else:
                     invoer_pos = input("positie X: ")
                     speler.playermens(bord, invoer_pos, x)
@@ -27,7 +28,8 @@ class regels:
 
             else:  # oneven getallen 'O'
                 if spelTegen in ("1", "3"):
-                    spelerRandom.spelerrandom.spelerRobot(self, bord)
+                    invoer_pos = str(random.randrange(1,10))
+                    spelerRandom.playerRandom(bord, invoer_pos, x)
                 else:
                     invoer_pos = input("positie O: ")
                     speler.playermens(bord, invoer_pos, x)
