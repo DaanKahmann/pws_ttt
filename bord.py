@@ -21,14 +21,16 @@ class regels:
                 if spelTegen in ("2", "3"):
                     spelerRandom.spelerrandom.spelerRobot2(self, bord)
                 else:
-                    speler.playermens.spelerX(self, bord)
+                    invoer_pos = input("positie X: ")
+                    speler.playermens(bord, invoer_pos, x)
                 beurtX = True
 
             else:  # oneven getallen 'O'
                 if spelTegen in ("1", "3"):
                     spelerRandom.spelerrandom.spelerRobot(self, bord)
                 else:
-                    speler.playermens.spelerO(self, bord)
+                    invoer_pos = input("positie O: ")
+                    speler.playermens(bord, invoer_pos, x)
                 beurtX = False
 
             print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
