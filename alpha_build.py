@@ -6,9 +6,12 @@ class tic_tac_toe:
     def __init__(self):
         # bord_grootte = int(input("Hoe groot moet het bord zijn? "))
         print("Welkom bij ons geweldige spel, veel plezier!")
-        bord.regels.spel(self)
+        spelTegen = bord.regels.tegen_wie(self)
 
+        x = bord.regels.wie_begint(self)
 
+        for i in range(20):
+            bord.regels.spel(self, spelTegen, x)
 
 
 
