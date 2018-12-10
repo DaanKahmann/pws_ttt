@@ -4,25 +4,18 @@ import spelerRandom
 
 class regels:
 
-    def spel(self, spelTegen, x):
-        scoreX = [0, 0, 0]  # gewonnen, verloren, gelijk
-        scoreO = [0, 0, 0]
+    def __init__(self, spelTegen, x):
+        self.data = []
+        self.countList = []
+        for a in range(20):
+            bord = list(range(1, 10))  # Maak het bord
+            regels.spel(self,spelTegen, x, bord)
+            print(self.data)
+            self.countList = [self.data.count("X"), self.data.count("O"), self.data.count("Tie")]
+            print(self.countList)
 
-        winx = 0
-        verliesx = 0
-
-        wino = 0
-        verlieso = 0
-
-        gelijk = 0
-
-        bord = list(range(1, 10))  # Maak het bord
-        #x = regels.wie_begint(self)
-
-        #spelTegen = regels.tegen_wie(self)          #haalt variabele spelTegen uit de functie tegen_wie,
-                                                    #moet voor zorgen dat functie niet wordt aangeroepen in spel
+    def spel(self,spelTegen, x, bord):
         print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord zien
-
         for i in range(9):
             if x % 2 == 0:  # even getallen: 'X'
                 if spelTegen in ("2", "3"):
@@ -41,28 +34,10 @@ class regels:
             print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
 
             if regels.winnaar(self, beurtX, bord):
-                if beurtX:
-                    winx = winx + 1
-                    scoreX[0] = winx
-                    verlieso = verlieso + 1
-                    scoreO[1] = verlieso
-
-                else:
-                    wino = wino + 1
-                    scoreO[0] = wino
-                    verliesx = verliesx + 1
-                    scoreX[1] = verliesx
-                print('stand van X:', scoreX)
-                print('stand van O:', scoreO)
-
                 break
             elif i == 8:
+                self.data.append("Tie")
                 print("It's a Tie")
-                gelijk = gelijk + 1
-                scoreX[2] = gelijk
-                scoreO[2] = gelijk
-                print('stand van X:', scoreX)
-                print('stand van O:', scoreO)
                 break
             x = x + 1
 
@@ -97,44 +72,9 @@ class regels:
                 or bord[1] == bord[4] == bord[7] or bord[2] == bord[5] == bord[8]:
             if beurtX:
                 print("X heeft gewonnen")
+                self.data.append("X")
 
             else:
                 print("O heeft gewonnen")
+                self.data.append("O")
             return True
-
-
-class stand:
-
-    def score(self):
-        scoreX = [0, 0, 0]  # gewonnen, verloren, gelijk
-        scoreO = [0, 0, 0]
-
-        winx = 0
-        verliesx = 0
-
-        wino = 0
-        verlieso = 0
-
-        gelijk = 0
-
-    def scorewinX(self, winx, scoreX, verlieso, scoreO):
-        winx = winx + 1
-        scoreX[0] = winx
-        verlieso = verlieso + 1
-        scoreO[1] = verlieso
-
-    def scorewinO(self, wino, scoreO, verliesx, scoreX):
-        wino = wino + 1
-        scoreO[0] = wino
-        verliesx = verliesx + 1
-        scoreX[1] = verliesx
-
-    def gelijkscore(self,gelijk, scoreX, scoreO):
-        gelijk = gelijk + 1
-        scoreX[2] = gelijk
-        scoreO[2] = gelijk
-
-
-
-
-
