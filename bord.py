@@ -7,14 +7,14 @@ class regels:
     def __init__(self, spelTegen, x):
         self.data = []
         self.countList = []
-        for a in range(20):
+        for a in range(70):
             bord = list(range(1, 10))  # Maak het bord
-            regels.spel(self,spelTegen, x, bord)
-            print(self.data)
+            regels.spel(self, spelTegen, x, bord)
+            #print(self.data)
             self.countList = [self.data.count("X"), self.data.count("O"), self.data.count("Tie")]
-            print(self.countList)
+            print("De stand is (X, O, gelijk): ", self.countList)
 
-    def spel(self,spelTegen, x, bord):
+    def spel(self, spelTegen, x, bord):
         print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord zien
         for i in range(9):
             if x % 2 == 0:  # even getallen: 'X'
