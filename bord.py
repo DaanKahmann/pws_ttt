@@ -1,21 +1,28 @@
 import speler
 import spelerRandom
 import random
+import graphical
 
 class regels:
 
     def __init__(self, spelTegen, x):
         self.data = []
         self.countList = []
+        self.ui = graphical.Graphical() # gebruik deze regel voor de PyGame UI
+        # self.ui = None # gebruik deze regel voor de oude UI
         for a in range(70):
             bord = list(range(1, 10))  # Maak het bord
-            regels.spel(self, spelTegen, x, bord)
+            regels.spel(self, spelTegen, x, bord, self.ui)
             #print(self.data)
             self.countList = [self.data.count("X"), self.data.count("O"), self.data.count("Tie")]
             print("De stand is (X, O, gelijk): ", self.countList)
 
-    def spel(self, spelTegen, x, bord):
-        print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord zien
+    def spel(self, spelTegen, x, bord, ui=None):
+        if ui is None:
+            print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord zien
+        else:
+            ui.tick()
+            ui.render(bord)
         for i in range(9):
             if x % 2 == 0:  # even getallen: 'X'
                 if spelTegen in ("2", "3"):
@@ -35,7 +42,11 @@ class regels:
                     speler.playermens(bord, invoer_pos, x)
                 beurtX = False
 
-            print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
+            if ui is None:
+                print("\n", bord[:3], "\n", bord[3:6], "\n", bord[6:])  # laat bord met wijziging zien
+            else:
+                ui.tick()
+                ui.render(bord)
 
             if regels.winnaar(self, beurtX, bord):
                 break
