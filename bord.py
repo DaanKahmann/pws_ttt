@@ -52,6 +52,7 @@ class regels:
                 break
             elif i == 8:
                 self.data.append("Tie")
+                self.ui.add_score(2)
                 print("It's a Tie")
                 break
             x = x + 1
@@ -88,8 +89,10 @@ class regels:
             if beurtX:
                 print("X heeft gewonnen")
                 self.data.append("X")
+                self.ui.add_score(1)
 
             else:
                 print("O heeft gewonnen")
                 self.data.append("O")
+                self.ui.add_score(0)
             return True
