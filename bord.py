@@ -29,8 +29,8 @@ class regels:
                     invoer_pos = str(random.randrange(1, 10))
                     spelerRandom.playerRandom(bord, invoer_pos, x)
                 else:
-                    invoer_pos = input("positie X: ")
-                    speler.playermens(bord, invoer_pos, x)
+                    #invoer_pos = input("positie X: ")
+                    speler.playermens(bord, x)
                 beurtX = True
 
             else:  # oneven getallen 'O'
@@ -38,8 +38,8 @@ class regels:
                     invoer_pos = str(random.randrange(1,10))
                     spelerRandom.playerRandom(bord, invoer_pos, x)
                 else:
-                    invoer_pos = input("positie O: ")
-                    speler.playermens(bord, invoer_pos, x)
+                    #invoer_pos = input("positie O: ")
+                    speler.playermens(bord, x)
                 beurtX = False
 
             if ui is None:

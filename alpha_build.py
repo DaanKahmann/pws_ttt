@@ -8,6 +8,8 @@ class tic_tac_toe:
         print("Welkom bij ons geweldige spel, veel plezier!")
         spelTegen = bord.regels.tegen_wie(self)
 
+        player1 = speler.playermens(bord,x)
+
         x = bord.regels.wie_begint(self)
 
         bord.regels(spelTegen, x)
