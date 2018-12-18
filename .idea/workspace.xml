@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0faf24d9-eede-429d-a81e-64afa67332fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Board.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alpha_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/alpha_build.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,24 +15,24 @@
     <session id="676674899">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1618" />
-          <entry key="txt" value="287" />
+          <entry key="py" value="2039" />
+          <entry key="txt" value="425" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="287" />
-          <entry key="Python" value="1618" />
+          <entry key="PLAIN_TEXT" value="425" />
+          <entry key="Python" value="2039" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="3" />
+          <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="3" />
+          <entry key="Python" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -45,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/alpha_build.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            <state relative-caret-position="153">
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -57,10 +57,39 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bord.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+            <state relative-caret-position="286">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Board.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1545162484269" expanded="true" signature="14:19" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="38:45" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="62:131" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="155:242" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:267" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:270" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:271" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:279" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:281" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:283" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:288" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:290" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:296" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:308" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:314" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:318" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:320" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:323" ph="..." />
+                <marker date="1545162484269" expanded="true" signature="263:324" ph="..." />
               </folding>
             </state>
           </provider>
@@ -70,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/speler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="28" />
+              <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -158,18 +187,19 @@
         <option value="$PROJECT_DIR$/Menace.py" />
         <option value="$PROJECT_DIR$/speler.py" />
         <option value="$PROJECT_DIR$/speler.py" />
-        <option value="$PROJECT_DIR$/bord.py" />
-        <option value="$PROJECT_DIR$/bord.py" />
         <option value="$PROJECT_DIR$/spelerRandom.py" />
         <option value="$PROJECT_DIR$/spelerRandom.py" />
         <option value="$PROJECT_DIR$/alpha_build.py" />
         <option value="$PROJECT_DIR$/alpha_build.py" />
+        <option value="$PROJECT_DIR$/bord.py" />
+        <option value="$PROJECT_DIR$/bord.py" />
+        <option value="$PROJECT_DIR$/Board.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="672" />
-    <option name="y" value="-14" />
+    <option name="x" value="699" />
+    <option name="y" value="-19" />
     <option name="width" value="544" />
     <option name="height" value="662" />
   </component>
@@ -408,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545052861804</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="tic_tac_toe is nu een functie niet een class, ik denk dat dit handiger is dan een class voor alpha_build">
+      <created>1545066788962</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545066788962</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -423,7 +460,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.17008443" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.17008443" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.12127976" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" />
@@ -432,7 +469,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49925596" visible="true" weight="0.22533633" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49925596" visible="true" weight="0.22533633" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49925596" weight="0.57735425" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -486,7 +523,8 @@
     <MESSAGE value="Test commit van nieuwste versie (merge problemen zijn nu hopelijk opgelost)" />
     <MESSAGE value="Data wordt bijgehouden en __init__ in bord.py&#10;De data wordt in een list gezet en daarna geteld" />
     <MESSAGE value="speler is beter georganiseerd (__init__ en def zet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="speler is beter georganiseerd (__init__ en def zet)" />
+    <MESSAGE value="tic_tac_toe is nu een functie niet een class, ik denk dat dit handiger is dan een class voor alpha_build" />
+    <option name="LAST_COMMIT_MESSAGE" value="tic_tac_toe is nu een functie niet een class, ik denk dat dit handiger is dan een class voor alpha_build" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/alpha built.py" />
@@ -526,23 +564,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/speler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bord.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="61" lean-forward="true" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spelerRandom.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -550,10 +571,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/speler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/alpha_build.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="153">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bord.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1545162484269" expanded="true" signature="14:19" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="38:45" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="62:131" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="155:242" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:267" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:270" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:271" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:279" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:281" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:283" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:288" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:290" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:296" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:308" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:314" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:318" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:320" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:323" ph="..." />
+            <marker date="1545162484269" expanded="true" signature="263:324" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
