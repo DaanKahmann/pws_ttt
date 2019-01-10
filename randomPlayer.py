@@ -2,4 +2,4 @@ import random
 import Board
 
 def randomPlayer():
-    return random.sample(Board.Board())[0]
+    return random.sample(Board._rotations[0][0], 1)

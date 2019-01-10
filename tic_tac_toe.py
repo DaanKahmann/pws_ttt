@@ -5,6 +5,6 @@ def ttt():
 
     player1 = randomPlayer.randomPlayer()
     player2 = randomPlayer.randomPlayer()
-
+    print(randomPlayer.randomPlayer())
 
 ttt()
