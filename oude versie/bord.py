@@ -9,7 +9,7 @@ class regels:
         self.countList = []
         self.ui = graphical.Graphical() # gebruik deze regel voor de PyGame UI
         # self.ui = None # gebruik deze regel voor de oude UI
-        for a in range(70):
+        for a in range(1000):
             bord = list(range(1, 10))  # Maak het bord
             regels.spel(self, spelTegen, x, bord, self.ui)
             #print(self.data)

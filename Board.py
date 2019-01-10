@@ -1,6 +1,6 @@
-import itertools
-from copy import deepcopy
-import numpy as np
+import speler
+import spelerRandom
+import graphical
 
 # define all rotations (clockwise)
 _rotations = [
@@ -85,7 +85,7 @@ def _get_minimal_rotation(state):
 
 # return the state with a specific cell changed to value
 # TODO: make it so you could call board[x, y] = value to a get a new board with that change
-def _state_set_cell(state, coordinate, value):
+def _state_set_cell(state, coordinate, value, deepcopy):
     new_state = deepcopy(state)
     new_state[coordinate[0]][coordinate[1]] = value
     return new_state
