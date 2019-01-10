@@ -1,6 +1,5 @@
-import speler
-import spelerRandom
-import graphical
+import itertools
+from copy import deepcopy
 
 # define all rotations (clockwise)
 _rotations = [
@@ -40,6 +39,7 @@ _win_conditions = [
     [(0, 0), (1, 1), (2, 2)],
     [(2, 0), (1, 1), (0, 2)],
 ]
+
 
 # returns a state based on an original state and a translation matrix
 def _translate(state, translation):
@@ -85,10 +85,11 @@ def _get_minimal_rotation(state):
 
 # return the state with a specific cell changed to value
 # TODO: make it so you could call board[x, y] = value to a get a new board with that change
-def _state_set_cell(state, coordinate, value, deepcopy):
+def _state_set_cell(state, coordinate, value):
     new_state = deepcopy(state)
     new_state[coordinate[0]][coordinate[1]] = value
     return new_state
+
 
 class Board:
     def __str__(self):
@@ -96,21 +97,24 @@ class Board:
 
     # Make it possible to use == on two boards
     def __eq__(self, other):
-        return str(self.state) == str(other.state)
+        smallest, _, _ = _get_minimal_rotation(self.state)
+        other_smallest, _, _ = _get_minimal_rotation(other.state)
+        return _state_str(smallest) == _state_str(other_smallest)
 
     # Allows Boards to be used as the key in a set
     def __hash__(self):
-        return hash(str(self))
+        smallest, _, _ = _get_minimal_rotation(self.state)
+        return hash(str(_state_str(smallest)))
 
-    def __init__(self):
+    def __init__(self, state=None, minimal=False):
         # If no initial state is give, generate an empty board
         # Otherwise, use the given state
-        self.flips = flips
-        self.rotations = rotations
         if state is None:
             self.state = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-        else:
+        elif minimal:
             self.state, _, _ = _get_minimal_rotation(deepcopy(state))
+        else:
+            self.state = state
 
     # Returns 'False' if there is no winner yet
     # Returns 1 or 2 to indicate the winning player, or 3 to indicate a draw
@@ -127,12 +131,15 @@ class Board:
                 return 3
             return False
 
-    def mogelijkheden(self):    #geeft de mogelijkheden die de speler heeft om een X of een O neer te zetten
+    def mogelijkheden(self, uniek=True):    #geeft de mogelijkheden die de speler heeft om een X of een O neer te zetten
         moves = {}
         potential_moves = [[(x, y) for y in range(3) if self.state[x][y] == 0] for x in range(3)]
-        for potential_move in itertools.chain(*potential_moves):
-            moves[Board(state=_state_set_cell(self.state, potential_move, self.player()))] = potential_move
-        return moves.values()
+        if uniek:
+            for potential_move in itertools.chain(*potential_moves):
+                moves[Board(state=_state_set_cell(self.state, potential_move, self.player()))] = potential_move
+            return moves.values()
+        else:
+            return list(itertools.chain(*potential_moves))
 
     # def draw_board(self):   #geeft het bord (we weten niet zeker of deze wel nodig is)
     '''
@@ -149,7 +156,7 @@ class Board:
 
     # The most recent move is equal to the number of none zero cells
     # i.e. the most recent move on a board with one cell set was the first move
-    def move(self):
+    def ronde(self):
         count = 0
         for cell in itertools.chain(*self.state):
             if cell > 0:
@@ -160,8 +167,18 @@ class Board:
         if player is not None and player is not self.player():
             raise ValueError('It is not that player\'s move')
         new_state = _state_set_cell(self.state, coordinate, self.player())
-        return Board(new_state, self.flips, self.rotations)
+        return Board(new_state)
 
     # Returns the player who should make the next move (player 1 or player 2)
-    def player(self):
-        return (self.move() % 2) + 1
+    def speler(self):
+        return (self.ronde() % 2) + 1
+
+    def translate(self, other_board, coordinate):
+        if other_board.is_minimal():
+            minimal_state, flipped, rotated = _get_minimal_rotation(self.state)
+            coordinate = rotated[coordinate[0]][coordinate[1]]
+            if flipped:
+                coordinate = _flip[coordinate[0]][coordinate[1]]
+            return coordinate
+        else:
+            raise ValueError('second board should be in minimal state')
