@@ -126,7 +126,7 @@ class Board:
                 if self.cell(condition[0]) != 0:
                     return self.cell(condition[0])
         else:
-            if self.move() == 9:
+            if self.ronde() == 9:
                 # No win condition but the board is full, this is a draw
                 return 3
             return False
@@ -136,8 +136,8 @@ class Board:
         potential_moves = [[(x, y) for y in range(3) if self.state[x][y] == 0] for x in range(3)]
         if uniek:
             for potential_move in itertools.chain(*potential_moves):
-                moves[Board(state=_state_set_cell(self.state, potential_move, self.player()))] = potential_move
-            return moves.values()
+                moves[Board(state=_state_set_cell(self.state, potential_move, self.speler()))] = potential_move
+            return list(moves.values())
         else:
             return list(itertools.chain(*potential_moves))
 
@@ -164,9 +164,9 @@ class Board:
         return count
 
     def make_move(self, coordinate, player=None):
-        if player is not None and player is not self.player():
+        if player is not None and player is not self.speler():
             raise ValueError('It is not that player\'s move')
-        new_state = _state_set_cell(self.state, coordinate, self.player())
+        new_state = _state_set_cell(self.state, coordinate, self.speler())
         return Board(new_state)
 
     # Returns the player who should make the next move (player 1 or player 2)

@@ -70,11 +70,11 @@ class Graphical:
         if board is not None:
             for row in range(3):
                 for col in range(3):
-                    value = board[3 * row + col]
+                    value = board.cell((row, col))
                     # Draw the appropriate figure
-                    if value == 'X':
+                    if value == 1:
                         self.draw_x(col, row)
-                    if value == 'O':
+                    if value == 2:
                         self.draw_o(col, row)
 
         self.draw_score("wins %d/%d" % (self.score[0], sum(self.score)), 110)
