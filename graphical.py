@@ -78,7 +78,7 @@ class Graphical:
                         self.draw_o(col, row)
 
         self.draw_score("wins %d/%d" % (self.score[0], sum(self.score)), 110)
-        self.draw_score("(draws %d, losses %d)" % (self.score[1], self.score[2]), 40)
+        self.draw_score("(draws %d, losses %d)" % (self.score[2], self.score[1]), 40)
 
         # Update the screen
         pygame.display.update()

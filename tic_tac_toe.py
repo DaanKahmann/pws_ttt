@@ -22,7 +22,8 @@ def ttt():
         gui.tick()
         gui.render(bord)
         if bord.winner():
-           print(bord.winner())
-           bord = Board()
+            gui.add_score(bord.winner())
+            print(bord.winner())
+            bord = Board()
 
 ttt()
