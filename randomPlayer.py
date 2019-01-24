@@ -1,5 +1,8 @@
 import random
-import Board
 
-def randomPlayer():
-    return random.sample(Board._rotations[0][0], 1)
+
+class RandomPlayer:
+
+    def doezet(self, bord):
+        zetten = bord.mogelijkheden(uniek=True)
+        return random.choice(zetten)
