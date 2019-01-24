@@ -1,13 +1,13 @@
 import randomPlayer
 from Board import Board
+from Menace import Menace
 from graphical import Graphical
 
 
 def ttt():
     print("Welkom bij ons geweldige spel, veel plezier!")
-
     player1 = randomPlayer.RandomPlayer()
-    player2 = randomPlayer.RandomPlayer()
+    player2 = Menace()
     bord = Board()
     gui = Graphical()
     gui.tick()
