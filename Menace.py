@@ -1,22 +1,20 @@
 import random
 
 
-class Menace:
 
+
+class Menace:
 
     def doe_zet(self, bord):
         zetten = bord.mogelijkheden(uniek=True)
         kans = random.randrange(len(zetten))
+        print(self.opbouwen(bord))
         return zetten[kans - 1]
-
 
     def opbouwen(self, bord):
         zetten = bord.mogelijkheden(uniek=True)
         stapel = []
-        for zet in zetten:          #ik wou voor elk "iets" dat in de list zetten zit moet het een zet bij de stapel doen maar dit klopt niet
+
+        for zet in zetten:  #geeft een list met wat de mogelijke zetten in zijn in de toestand van het huidige bord
             stapel.append(zet)
-
         return stapel
-
-
-

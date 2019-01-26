@@ -6,7 +6,7 @@ from graphical import Graphical
 
 def ttt():
     print("Welkom bij ons geweldige spel, veel plezier!")
-    player1 = randomPlayer.RandomPlayer()
+    player1 = Menace()
     player2 = Menace()
     bord = Board()
     gui = Graphical()
