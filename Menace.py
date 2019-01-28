@@ -1,29 +1,54 @@
 import random
+from numpy.random import choice
 
-
+from Board import Board
 
 
 class Menace:
 
-    def doe_zet(self, bord):
-        zetten = bord.mogelijkheden(uniek=True)
-        kans = random.randrange(len(zetten))
-        een_zet = zetten[kans-1]
-        gedaan_player1 = []
-        gedaan_player2 = []
-        #print(self.opbouwen(bord))
-        if bord.speler() == 1:              #zetten worden in een list gezet maar na elke beurt gereset doordat de functie opnieuw wordt aangeroepen
-            gedaan_player1.append(een_zet)
-            print('speler 1: ', gedaan_player1)
-        else:
-            gedaan_player2.append(een_zet)
-            print('speler 2: ', gedaan_player2)
-        return een_zet
+    def __init__(self):
+        self.zet_gedaan = []
+        self.stapel = self.opbouwen()
 
-    def opbouwen(self, bord):
-        zetten = bord.mogelijkheden(uniek=True)
-        stapel = []
-        for zet in zetten:  #geeft een list met wat de mogelijke zetten in zijn in de toestand van het huidige bord
-            stapel.append(zet)
+    def doe_zet(self, bord):
+        beurt = self.stapel[bord.ronde()]
+        for luciferdoosje in beurt:
+            if luciferdoosje.bord == bord:
+                zet = luciferdoosje.geef_zet()
+                zet = bord.translate(luciferdoosje.bord, zet)
+                if zet is None:
+                    print(luciferdoosje)
+                else:
+                    return zet
+        print("geen ld gevonden \n" + str(bord))
+
+    def opbouwen(self):
+        stapel = [[Lucifer(Board())]]
+        for n in range(1,9):
+            mogelijkheden = set()
+            for luciferdoosje in stapel[n - 1]:
+                for zet in luciferdoosje.zetten:
+                    mogelijkheden.add(luciferdoosje.bord.make_move(zet, minimal=True))
+
+            beurt = []
+            for bord in mogelijkheden:
+                beurt.append(Lucifer(bord))
+            stapel.append(beurt)
         return stapel
 
+class Lucifer:
+    #staat van een spel
+    #kraaltje / opties: mogelijke zetten met kans
+    #
+    def __init__(self, bord):
+        self.bord = bord
+        self.zetten = bord.mogelijkheden(uniek=True)
+        self.kans = [7] * len(self.zetten)
+
+    def geef_zet(self):
+        totaal_kraaltjes = sum(self.kans)
+        random_getal = random.randint(1, totaal_kraaltjes)
+        for zet, kans in zip(self.zetten, self.kans):
+            random_getal -= kans
+            if random_getal <= 0:
+                return zet

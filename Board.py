@@ -163,11 +163,14 @@ class Board:
                 count += 1
         return count
 
-    def make_move(self, coordinate, player=None):
+    def make_move(self, coordinate, player=None, minimal=False):
         if player is not None and player is not self.speler():
             raise ValueError('It is not that player\'s move')
+        if self.state[coordinate[0]][coordinate[1]] != 0:
+            print("oeps!!")
+            return self
         new_state = _state_set_cell(self.state, coordinate, self.speler())
-        return Board(new_state)
+        return Board(new_state, minimal)
 
     # Returns the player who should make the next move (player 1 or player 2)
     def speler(self):
@@ -182,3 +185,10 @@ class Board:
             return coordinate
         else:
             raise ValueError('second board should be in minimal state')
+
+    def is_minimal(self):
+        _, flipped, rotated = _get_minimal_rotation(self.state)
+        if ( flipped not in _flip and rotated not in _rotations):
+            return True
+        else:
+            return False
