@@ -1,6 +1,6 @@
 from collections import Counter
 
-import randomPlayer
+from randomPlayer import RandomPlayer
 from Board import Board
 from Menace import Menace
 from graphical import Graphical
@@ -12,6 +12,7 @@ def ttt():
     winnaars = []
     player1 = Menace()
     player2 = Menace()
+    #player2 = RandomPlayer()
     #gui = Graphical()
     #gui.tick()
     #gui.render(bord)
@@ -32,7 +33,7 @@ def ttt():
             #print(bord.winner())
             bord = Board()
             if len(winnaars) % 100 == 0 and len(winnaars) > 0:
-                print(Counter(winnaars))
-                print(Counter(winnaars[-100:-1]))
+                print("Totaal: ", Counter(winnaars), "Laatste 100: ", Counter(winnaars[-100:-1]))
+                #print(Counter(winnaars[-100:-1]))
 
 ttt()
