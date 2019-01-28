@@ -1,13 +1,13 @@
 import speler
 import spelerRandom
-import graphical
+import graphical2
 
 class regels:
 
     def __init__(self, spelTegen, x):
         self.data = []
         self.countList = []
-        self.ui = graphical.Graphical() # gebruik deze regel voor de PyGame UI
+        self.ui = graphical2.Graphical() # gebruik deze regel voor de PyGame UI
         # self.ui = None # gebruik deze regel voor de oude UI
         for a in range(1000):
             bord = list(range(1, 10))  # Maak het bord

@@ -7,7 +7,7 @@ from Board import Board
 class Menace:
 
     def __init__(self):
-        self.zet_gedaan = []
+        #self.zet_gedaan = []
         self.stapel = self.opbouwen()
 
     def doe_zet(self, bord):
@@ -39,7 +39,6 @@ class Menace:
 class Lucifer:
     #staat van een spel
     #kraaltje / opties: mogelijke zetten met kans
-    #
     def __init__(self, bord):
         self.bord = bord
         self.zetten = bord.mogelijkheden(uniek=True)

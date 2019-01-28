@@ -27,11 +27,10 @@ def ttt():
         if bord.winner():
             gui.add_score(bord.winner())
             winnaars.append(bord.winner())
-            print(bord.winner())
+            #print(bord.winner())
             bord = Board()
-
-     #   if len(winnaars) % 100 == 0 and len(winnaars) > 0:
-      #      print(Counter(winnaars))
-       #     print(Counter(winnaars[-100]))
+            if len(winnaars) % 100 == 0 and len(winnaars) > 0:
+                print(Counter(winnaars))
+                #print(Counter(winnaars[-100]))
 
 ttt()
