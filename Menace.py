@@ -65,10 +65,11 @@ class Lucifer:
         index = self.zetten.index(zet)
         if winnaar == 3:
             #bij gelijkspel doen we nu niks
+            self.kans[index] += 1
             return
         elif self.bord.speler() == winnaar:
             #bij winst doe iets
-            self.kans[index] += 3
+            self.kans[index] += 4
             return
         else:
             #haal wat eraf

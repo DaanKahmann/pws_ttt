@@ -13,9 +13,9 @@ def ttt():
     player1 = Menace()
     player2 = Menace()
     #player2 = RandomPlayer()
-    #gui = Graphical()
-    #gui.tick()
-    #gui.render(bord)
+    gui = Graphical()
+    gui.tick()
+    gui.render(bord)
     while True:
         if bord.speler() == 1:
             zet = player1.doe_zet(bord)
@@ -23,12 +23,12 @@ def ttt():
             zet = player2.doe_zet(bord)
 
         bord = bord.make_move(zet)
-        #gui.tick()
-        #gui.render(bord)
+        gui.tick()
+        gui.render(bord)
         if bord.winner():
             player1.uitkomst(bord.winner())
             player2.uitkomst(bord.winner())
-            #gui.add_score(bord.winner())
+            gui.add_score(bord.winner())
             winnaars.append(bord.winner())
             #print(bord.winner())
             bord = Board()
