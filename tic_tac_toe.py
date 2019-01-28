@@ -9,12 +9,12 @@ from graphical import Graphical
 def ttt():
     print("Welkom bij ons geweldige spel, veel plezier!")
     bord = Board()
-    winnaars = [];
+    winnaars = []
     player1 = Menace()
     player2 = Menace()
-    gui = Graphical()
-    gui.tick()
-    gui.render(bord)
+    #gui = Graphical()
+    #gui.tick()
+    #gui.render(bord)
     while True:
         if bord.speler() == 1:
             zet = player1.doe_zet(bord)
@@ -22,15 +22,17 @@ def ttt():
             zet = player2.doe_zet(bord)
 
         bord = bord.make_move(zet)
-        gui.tick()
-        gui.render(bord)
+        #gui.tick()
+        #gui.render(bord)
         if bord.winner():
-            gui.add_score(bord.winner())
+            player1.uitkomst(bord.winner())
+            player2.uitkomst(bord.winner())
+            #gui.add_score(bord.winner())
             winnaars.append(bord.winner())
             #print(bord.winner())
             bord = Board()
             if len(winnaars) % 100 == 0 and len(winnaars) > 0:
                 print(Counter(winnaars))
-                #print(Counter(winnaars[-100]))
+                print(Counter(winnaars[-100:-1]))
 
 ttt()

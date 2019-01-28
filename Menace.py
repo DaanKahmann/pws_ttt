@@ -7,7 +7,8 @@ from Board import Board
 class Menace:
 
     def __init__(self):
-        #self.zet_gedaan = []
+        self.zet_gedaan = []
+        self.ld_gedaan = []
         self.stapel = self.opbouwen()
 
     def doe_zet(self, bord):
@@ -15,6 +16,8 @@ class Menace:
         for luciferdoosje in beurt:
             if luciferdoosje.bord == bord:
                 zet = luciferdoosje.geef_zet()
+                self.zet_gedaan.append(zet)
+                self.ld_gedaan.append(luciferdoosje)
                 zet = bord.translate(luciferdoosje.bord, zet)
                 if zet is None:
                     print(luciferdoosje)
@@ -36,6 +39,12 @@ class Menace:
             stapel.append(beurt)
         return stapel
 
+    def uitkomst(self, winnaar):
+        for zet, luciferdoosje  in zip(self.zet_gedaan, self.ld_gedaan):
+            luciferdoosje.uitkomst(zet, winnaar)
+        self.zet_gedaan = []
+        self.ld_gedaan = []
+
 class Lucifer:
     #staat van een spel
     #kraaltje / opties: mogelijke zetten met kans
@@ -51,3 +60,18 @@ class Lucifer:
             random_getal -= kans
             if random_getal <= 0:
                 return zet
+
+    def uitkomst(self, zet, winnaar):
+        index = self.zetten.index(zet)
+        if winnaar == 3:
+            #bij gelijkspel doen we nu niks
+            return
+        elif self.bord.speler() == winnaar:
+            #bij winst doe iets
+            self.kans[index] += 3
+            return
+        else:
+            #haal wat eraf
+            if self.kans[index] > 0 and sum(self.kans) > 2: #deze waarden moeten aangepast worden als dat in de if aangepast wordt
+                self.kans[index] -= 1
+            return

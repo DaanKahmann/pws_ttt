@@ -7,3 +7,6 @@ class personPlayer:
         zetten = bord.mogelijkheden(uniek=True)
 
         return random.choice(zetten)
+
+    def uitkomst(self, ):
+        pass

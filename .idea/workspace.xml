@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0faf24d9-eede-429d-a81e-64afa67332fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/oude versie/graphical2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Menace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Menace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oude versie/bord.py" beforeDir="false" afterPath="$PROJECT_DIR$/oude versie/bord.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/personPlayer.py" beforeDir="false" afterPath="$PROJECT_DIR$/personPlayer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tic_tac_toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/tic_tac_toe.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tic_tac_toe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="311">
+              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -28,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Menace.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240">
-              <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="-204">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -41,9 +40,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/personPlayer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Board.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
+            <state relative-caret-position="-13">
               <caret line="165" column="57" selection-start-line="165" selection-start-column="57" selection-end-line="165" selection-end-column="57" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -52,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/graphical.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="-12">
               <caret line="85" column="27" lean-forward="true" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -114,14 +122,14 @@
         <option value="$PROJECT_DIR$/bord.py" />
         <option value="$PROJECT_DIR$/beta.py" />
         <option value="$PROJECT_DIR$/randomPlayer.py" />
-        <option value="$PROJECT_DIR$/personPlayer.py" />
         <option value="$PROJECT_DIR$/Board.py" />
-        <option value="$PROJECT_DIR$/tic_tac_toe.py" />
-        <option value="$PROJECT_DIR$/Menace.py" />
         <option value="$PROJECT_DIR$/oude versie/alpha_build.py" />
         <option value="$PROJECT_DIR$/oude versie/graphical2.py" />
         <option value="$PROJECT_DIR$/graphical.py" />
         <option value="$PROJECT_DIR$/oude versie/bord.py" />
+        <option value="$PROJECT_DIR$/Menace.py" />
+        <option value="$PROJECT_DIR$/tic_tac_toe.py" />
+        <option value="$PROJECT_DIR$/personPlayer.py" />
       </list>
     </option>
   </component>
@@ -143,6 +151,11 @@
             <path>
               <item name="pws" type="b2602c69:ProjectViewProjectNode" />
               <item name="pws" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pws" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pws" type="462c0819:PsiDirectoryNode" />
+              <item name="oude versie" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.alpha_build">
+  <component name="RunManager" selected="Python.tic_tac_toe">
     <configuration name="Menace" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -304,8 +317,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.alpha_build" />
         <item itemvalue="Python.tic_tac_toe" />
+        <item itemvalue="Python.alpha_build" />
         <item itemvalue="Python.Menace" />
         <item itemvalue="Python.bord" />
         <item itemvalue="Python.alpha_build2" />
@@ -414,10 +427,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548683236772</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="oude GUI toegevoegd in het mapje &quot;oude versie&quot; zodat de de oude versie (alpha_build) weer werkt">
+      <created>1548685577832</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1548685577832</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -428,6 +448,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.13244048" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.12127976" />
@@ -438,7 +459,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49925596" visible="true" weight="0.29623568" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295082" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49925596" weight="0.57529795" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074404" side_tool="true" weight="0.29787233" />
@@ -495,7 +516,8 @@
     <MESSAGE value="een fancy randomspeler in menace.py" />
     <MESSAGE value="ik heb een begin gemaakt aan het opslaan van de zetten. We moeten er voor zorgen dat de zetten worden opgeslagen en niet gereset worden na elke loop." />
     <MESSAGE value="menace check." />
-    <option name="LAST_COMMIT_MESSAGE" value="menace check." />
+    <MESSAGE value="oude GUI toegevoegd in het mapje &quot;oude versie&quot; zodat de de oude versie (alpha_build) weer werkt" />
+    <option name="LAST_COMMIT_MESSAGE" value="oude GUI toegevoegd in het mapje &quot;oude versie&quot; zodat de de oude versie (alpha_build) weer werkt" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/alpha built.py" />
@@ -508,36 +530,9 @@
     <entry file="file://$PROJECT_DIR$/beta.py" />
     <entry file="file://$PROJECT_DIR$/alpha_build.py" />
     <entry file="file://$PROJECT_DIR$/speler.py" />
-    <entry file="file://$PROJECT_DIR$/personPlayer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/oude versie/speler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-85" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tic_tac_toe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="165" column="57" selection-start-line="165" selection-start-column="57" selection-end-line="165" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oude versie/alpha_build2.py">
@@ -575,16 +570,6 @@
         <state relative-caret-position="-18" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graphical.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="85" column="27" lean-forward="true" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/randomPlayer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -592,12 +577,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="165" column="57" selection-start-line="165" selection-start-column="57" selection-end-line="165" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tic_tac_toe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Menace.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="-204">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/personPlayer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graphical.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="85" column="27" lean-forward="true" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
