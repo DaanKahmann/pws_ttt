@@ -4,6 +4,7 @@ from randomPlayer import RandomPlayer
 from Board import Board
 from Menace import Menace
 from graphical import Graphical
+import csv
 
 
 def ttt():
@@ -16,7 +17,15 @@ def ttt():
     #gui = Graphical()
     #gui.tick()
     #gui.render(bord)
-    while True:
+
+    with open('test.csv', mode='a') as myfile:
+        fieldnames = [1, 2, 3]
+        mywriter = csv.DictWriter(myfile, fieldnames=fieldnames)
+        mywriter.writeheader()
+
+    i = 0
+
+    while i < 1000:
         if bord.speler() == 1:
             zet = player1.doe_zet(bord)
         else:
@@ -33,7 +42,15 @@ def ttt():
             #print(bord.winner())
             bord = Board()
             if len(winnaars) % 100 == 0 and len(winnaars) > 0:
+                export(winnaars)
                 print("Totaal: ", Counter(winnaars), "Laatste 100: ", Counter(winnaars[-100:-1]))
                 #print(Counter(winnaars[-100:-1]))
+            i = i + 1
+
+def export(winnaars):
+    with open('test.csv', mode='a') as myfile:
+        fieldnames = [1, 2, 3]
+        mywriter = csv.DictWriter(myfile, fieldnames=fieldnames)
+        mywriter.writerow(Counter(winnaars[-101:-1]))
 
 ttt()
