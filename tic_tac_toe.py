@@ -1,5 +1,6 @@
 from collections import Counter
 
+from fastUI import FastUI
 from personPlayer import Human
 from randomPlayer import RandomPlayer
 from Board import Board
@@ -13,6 +14,7 @@ def ttt():
     bord = Board()
     winnaars = []
     gui = Graphical()
+    # gui = FastUI()
     player1 = Menace()
     player2 = Human(gui)
     #player2 = RandomPlayer()
@@ -44,7 +46,7 @@ def ttt():
             bord = Board()
             if len(winnaars) % 100 == 0 and len(winnaars) > 0:
                 export(winnaars)
-                print("Totaal: ", Counter(winnaars), "Laatste 100: ", Counter(winnaars[-100:-1]))
+                print("Totaal: ", Counter(winnaars), "Laatste 100: ", Counter(winnaars[-101:-1]))
                 #print(Counter(winnaars[-100:-1]))
             i = i + 1
 
