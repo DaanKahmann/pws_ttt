@@ -1,5 +1,6 @@
 from collections import Counter
 
+from personPlayer import Human
 from randomPlayer import RandomPlayer
 from Board import Board
 from Menace import Menace
@@ -11,12 +12,12 @@ def ttt():
     print("Welkom bij ons geweldige spel, veel plezier!")
     bord = Board()
     winnaars = []
+    gui = Graphical()
     player1 = Menace()
-    player2 = Menace()
+    player2 = Human(gui)
     #player2 = RandomPlayer()
-    #gui = Graphical()
-    #gui.tick()
-    #gui.render(bord)
+    gui.tick()
+    gui.render(bord)
 
     with open('test.csv', mode='a') as myfile:
         fieldnames = [1, 2, 3]
@@ -32,12 +33,12 @@ def ttt():
             zet = player2.doe_zet(bord)
 
         bord = bord.make_move(zet)
-        #gui.tick()
-        #gui.render(bord)
+        gui.tick()
+        gui.render(bord)
         if bord.winner():
             player1.uitkomst(bord.winner())
             player2.uitkomst(bord.winner())
-            #gui.add_score(bord.winner())
+            gui.add_score(bord.winner())
             winnaars.append(bord.winner())
             #print(bord.winner())
             bord = Board()
