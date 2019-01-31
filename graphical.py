@@ -101,3 +101,9 @@ class Graphical:
 
     def add_score(self, winner):
         self.score[winner - 1] += 1
+
+    def add_csv(self, winnaar):
+        pass
+
+    def initiate_csv(self):
+        pass

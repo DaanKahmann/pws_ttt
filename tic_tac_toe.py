@@ -6,29 +6,24 @@ from randomPlayer import RandomPlayer
 from Board import Board
 from Menace import Menace
 from graphical import Graphical
-import csv
 
 
 def ttt():
     print("Welkom bij ons geweldige spel, veel plezier!")
     bord = Board()
     winnaars = []
-    gui = Graphical()
-    # gui = FastUI()
+    #gui = Graphical()
+    gui = FastUI()
     player1 = Menace()
-    player2 = Human(gui)
-    #player2 = RandomPlayer()
+    #player2 = Human(gui)
+    player2 = RandomPlayer()
     gui.tick()
     gui.render(bord)
-
-    with open('test.csv', mode='a') as myfile:
-        fieldnames = [1, 2, 3]
-        mywriter = csv.DictWriter(myfile, fieldnames=fieldnames)
-        mywriter.writeheader()
+    gui.initiate_csv()
 
     i = 0
 
-    while i < 1000:
+    while i < 11000:
         if bord.speler() == 1:
             zet = player1.doe_zet(bord)
         else:
@@ -42,18 +37,13 @@ def ttt():
             player2.uitkomst(bord.winner())
             gui.add_score(bord.winner())
             winnaars.append(bord.winner())
-            #print(bord.winner())
             bord = Board()
             if len(winnaars) % 100 == 0 and len(winnaars) > 0:
-                export(winnaars)
+                gui.add_csv(winnaars)
                 print("Totaal: ", Counter(winnaars), "Laatste 100: ", Counter(winnaars[-101:-1]))
-                #print(Counter(winnaars[-100:-1]))
+            if len(winnaars) == 10000:
+                gui = Graphical()
+                player2 = Human(gui)
             i = i + 1
-
-def export(winnaars):
-    with open('test.csv', mode='a') as myfile:
-        fieldnames = [1, 2, 3]
-        mywriter = csv.DictWriter(myfile, fieldnames=fieldnames)
-        mywriter.writerow(Counter(winnaars[-101:-1]))
 
 ttt()
