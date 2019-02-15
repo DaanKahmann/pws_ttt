@@ -3,7 +3,6 @@ import bord
 
 
 def tic_tac_toe(self=None):
-    # bord_grootte = int(input("Hoe groot moet het bord zijn? "))
     print("Welkom bij ons geweldige spel, veel plezier!")
     spelTegen = bord.regels.tegen_wie(self)
 

@@ -1,5 +1,4 @@
 import random
-from numpy.random import choice
 
 from Board import Board
 
@@ -64,15 +63,14 @@ class Lucifer:
     def uitkomst(self, zet, winnaar):
         index = self.zetten.index(zet)
         if winnaar == 3:
-            #bij gelijkspel doen we nu niks
-            self.kans[index] += 1
+            #bij gelijkspel wordt menace niet beloont
             return
         elif self.bord.speler() == winnaar:
-            #bij winst doe iets
+            #bij winst komen er 4 "kraaltjes bij
             self.kans[index] += 4
             return
         else:
-            #haal wat eraf
-            if self.kans[index] > 0 and sum(self.kans) > 2: #deze waarden moeten aangepast worden als dat in de if aangepast wordt
+            #menace wordt gestraft en er gaat 1 "kraaltje" van af
+            if self.kans[index] > 0 and sum(self.kans) > 2:
                 self.kans[index] -= 1
             return

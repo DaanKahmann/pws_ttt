@@ -83,7 +83,7 @@ class Graphical:
         # Update the screen
         pygame.display.update()
 
-    def tick(self, fps=120):
+    def tick(self, fps=1000):
         self.clock.tick(fps)
 
         # If there are 'quit' events, end the game
